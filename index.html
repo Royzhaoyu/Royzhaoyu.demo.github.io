@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  .h-full {
+    height: 100%;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .w-full2{
+    width: 47%;
+    padding-left: 36rem;
+    margin-bottom: 10px;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .top-0 {
+    top: 0;
+  }
+
+  .left-0 {
+    left: 0;
+    pointer-events:none;
+  }
+  .dow {
+    width: 98.5%;
+    padding-left: 1rem;
+    position: fixed;bottom:0
+    pointer-events:none;
+  }
+
+  .blockl{
+    display: block;
+    width: 38%;
+    padding: 0.4%;
+    margin-top: 16px;
+    pointer-events:none;
+    
+  }
+  .block2{
+    display: block;
+    width: 70%;
+    padding-top: 0.6rem;
+    pointer-events:none;
+  }
+  .block3{
+    display: block;
+    width: 85%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    pointer-events:none;
+  }
+
+  .block4{
+    display: block;
+    width: 100%;
+    padding-top: 0.6rem;
+    pointer-events:none;
+  }
+
+  .flex {
+    display: flex;
+    pointer-events:none;
+  }
+
+  .justify-between {
+    display: flex;
+    justify-content: space-between;
+    pointer-events:none;
+
+  }
+</style>
+
+<body>
+  <div class="h-full relative">
+    <iframe class="w-full h-full" src="./examples/hubert.html" frameborder="0"></iframe>
+    <div class="absolute top-0 left-0 w-full">
+      <!-- 上边 -->
+      <div>
+        <img class="w-full" src="./examples/imgs/Frame 58.png" alt="" srcset="" />
+        <img class="w-full2" src="./examples/imgs/Frame 59.png" alt="" srcset="" />
+
+      </div>
+      <div class="flex justify-between">
+        <!-- 左边 -->
+        <div>
+          <img class="blockl" src="./examples/imgs/Frame 19.png" alt="" srcset="" />
+          <img class="blockl" src="./examples/imgs/Frame 21.png" alt="" srcset="" />
+        
+          <div>
+            <img class="block4" src="./examples/imgs/Frame 66.png" alt="" srcset="" />
+            <img class="dow" src="./examples/imgs/Frame 61.png" alt="" srcset="" />
+            
+          </div>
+        </div>
+        
+        <!-- 右边 -->
+        <div>
+          <img class="block3" src="./examples/imgs/Frame 21.png" alt="" srcset=""  />
+          <img class="block3" src="./examples/imgs/Frame 32.png" alt="" srcset=""  />
+          <img class="block3" src="./examples/imgs/Frame 40.png" alt="" srcset=""  />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
